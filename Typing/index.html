@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <span class="text f-text">I'm LOVE </span>
+        <span class="text s-text"></span>
+    </div>
+
+    <script>
+        const typing = document.querySelector('.s-text');
+        const body = document.querySelector('body');
+        
+        const textLoad = () => {
+            setTimeout(() => {
+                typing.textContent = 'MERN';
+                body.style.background = 'red';
+            }, 0);
+
+            setTimeout(() => {
+                typing.textContent = 'MONGODB';
+            }, 4000);
+
+            setTimeout(() => {
+                typing.textContent = 'EXPRESS JS';
+            }, 8000);
+
+            setTimeout(() => {
+                typing.textContent = 'REACT JS';
+            }, 12000);
+
+            setTimeout(() => {
+                typing.textContent = 'NODE JS';
+            }, 16000);
+        }
+
+        textLoad();
+        setInterval(textLoad, 20000)
+    </script>
+</body>
+
+</html>

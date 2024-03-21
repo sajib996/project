@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px white;
+}
+
+.fristbar {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fristbar .username {
+    margin-left: 8px;
+}
+
+.fristbar .username svg {
+    position: relative;
+    top: 3px;
+    height: 12px;
+}
+
+.fristbar-right {
+    position: absolute;
+    right: 8px;
+}
+
+.plus-icon, .list{
+    display: inline;
+    cursor: pointer;
+}
+
+.fristbar .plus-icon {
+    position: absolute;
+    right: 40px;
+}
+
+.profile-info {
+    height: 90px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.profile-info .profile {
+    margin: 5px 0 0 8px;
+    height: 110px;
+    width: 100%;
+}
+
+.profile-info .profile img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.post-followrs-following {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.post-followrs-following .post {
+    position: absolute;
+}
+
+.post-followrs-following .followrs {
+    position: absolute;
+    left: 45px;
+}
+
+.post-followrs-following .following {
+    position: absolute;
+    left: 110px;
+}
+
+.post-followrs-following .number {
+    font-weight: bold;
+}
+
+.name-bio {
+    margin-left: 8px;
+}
+
+.name-bio .name {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.name-bio .bio {
+    font-size: 10px;
+}
+
+.profile-edit-share {
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 8px 8px 0 8px;
+
+}
+
+.profile-edit-share .edit, .share {
+    height: 25px;
+    width: 115px;
+    display: inline-flex;
+    background-color: #262626;
+    margin-right: 8px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-edit-share .add {
+    display: inline-block;
+    background-color: #262626;
+    padding: 3px 5px;
+    border-radius: 4px;
+    transform: rotateY(180deg);
+}
+
+.post-icon {
+    border: 1px solid red;
+    display: block;
+}
+
+.post-icon .post, .reels, .contact {
+    display: inline-flex;
+}

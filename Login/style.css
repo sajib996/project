@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+   
+}
+
+
+.login-box{
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+
+h4{
+    color: blue;
+    text-align: center;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.8px;
+    font-size: 25px;
+}
+
+.input{
+    min-height: 32px;
+    min-width: 250px;
+    margin: 3px 0;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 3px black;
+}
+
+.password{
+    margin-bottom: 10px;
+}
+
+.btn{
+    height: 30px;
+    width: 100px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px black;
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+.btn:hover{
+    height: 32px;
+    width: 120px;
+    letter-spacing: 0.8px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+label{
+    display: inline;
+    align-items: cente;
+    margin-bottom: 8px;
+    user-select: none;
+}
+
+label #checkbox{
+    margin-right: 5px;
+    display: inline;
+    border-radius: 4px;
+    outline: none;
+}
+
+.newuser{
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span{
+    position: relative;
+}
+
+.newuser span,a{
+    font-size: 14px;
+    color: green;
+    text-decoration: none;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: green;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+a:hover::after{
+    transform: scale(1);
+}
+

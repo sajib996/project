@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'BioRhyme', serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #input {
+            height: 40px;
+            width: 300px;
+            padding-left: 8px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .btn {
+            margin-top: 15px;
+            font-size: 18px;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 0;
+            box-shadow: 0 0 5px black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="div"></div>
+        <input type="text" name="password" id="input"><br>
+        <input type="button" onclick="generateOTP()" value="Generate" class="btn">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

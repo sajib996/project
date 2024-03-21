@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-bottom: 14px;
+    color: blue;
+}
+
+.singin-box{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px  black;
+}
+
+input#name,#email,#password{
+    min-height: 32px;
+    min-width: 250px;
+    margin: 3px 0;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 3px black;
+}
+
+input#date{
+    min-height: 32px;
+    min-width: 150px;
+    font-size: 17px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 0 0 3px black;
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#singin{
+    height: 30px;
+    width: 100px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px black;
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+#singin:hover{
+    height: 32px;
+    width: 120px;
+    letter-spacing: 0.8px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.already-account{
+   
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+span{
+    position: relative;
+}
+
+.already-account span,a{
+    font-size: 14px;
+    color: green;
+    text-decoration: none;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: green;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+a:hover::after{
+    transform: scale(1);
+}

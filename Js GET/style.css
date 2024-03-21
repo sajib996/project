@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    height: 60px;
+    width: 200px;
+    box-shadow: 0 0 5px black;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+
+.weather {
+    height: 85%;
+    width: 100%;
+    box-shadow: 0 0 5px green;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    transition: 1s;
+    display: none;
+}
+
+.data {
+    height: 40px;
+    width: 100%;
+    box-shadow:  0 0 5px black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.data h4:first-child {
+    margin-left: 30px;
+}
+
+.btn {
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+    position: relative;
+    top: 14px;
+    font-size: 20px;
+    cursor: pointer;
+}

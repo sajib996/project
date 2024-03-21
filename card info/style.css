@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* height: 100%;
+    width: 100%; */
+}
+
+.card {
+    height: 350px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black, 0 0 10px black;
+}
+
+.font {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    height: 130px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background-color: #000;
+    position: relative;
+}
+
+.image .photo {
+    height: 80px;
+    width: 80px;
+    padding: 3px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.info .name{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.info p {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2px;
+}
+.media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.media-icon div {
+    display: inline-flex;
+    margin: 15px 6px 0;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+
+.bi-facebook,.bi-telegram,.bi-instagram,.bi-messenger {
+    transition: 1s;
+    cursor: pointer;
+}
+
+.bi-facebook:hover {
+    color: blue;
+}
+.bi-telegram:hover {
+    color: #32A7E2;
+}
+
+.bi-instagram:hover {
+    color: #FF1C86;
+}
+
+.bi-messenger:hover {
+    color: #0084FF;
+}
+
+.last-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.last-info .follow, .message {
+    padding: 5px 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.follow:hover {
+    background-color: #4398db;
+}
+
+.message:hover {
+    background-color: #4398db;
+}
+
+.react-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.react-icon div {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin: 0 6px;
+    border-right: 1.5px rgb(195, 188, 188) solid;
+    padding-right: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.react-icon .bi {
+    margin-right: 5px;
+}
+
+.react-icon div:last-child {
+    border: 0;
+}
+
+.react-icon div:hover svg{
+    color: red;
+}
+
+@media only screen and (min-width:430px){
+    .card {
+        transform: scale(1.6);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .card {
+        transform: scale(1.3);    }
+}
